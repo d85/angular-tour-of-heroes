@@ -10,16 +10,6 @@ import { HeroService } from '../hero.service';
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
 
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
-
-  selectedHero: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
-
   /* The paramereter simulataneously defines a private heroService property
   *  and identifies it as a HeroService injection site */
   constructor(private heroService: HeroService) { }
